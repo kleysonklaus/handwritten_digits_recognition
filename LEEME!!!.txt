@@ -1,0 +1,20 @@
+se descargo el data set de la siguiente pagina:
+http://yann.lecun.com/exdb/mnist/
+(los 4 archivos, tanto las imagenes como las etiquetas)
+
+se usaron las siguientes librerias
+from matplotlib import pyplot as plt
+import numpy as np
+from loader import MNIST
+from sklearn.model_selection import train_test_split
+
+--------------------
+importante:
+para la lectura de datos se realizo lo siguiente:
+no se reconocia el archivo "loader.py", por lo que se tuvo que copiar el archivo
+de "/lib/site-package/mnist/loader.py" a "(el directorio donde se trabajaba, es por eso que
+hay el archivo -loader.py-)", con eso la lectura de datos funciona.
+tambien se instalo en MNIST (los datos, aunque sea redundante) con
+pip install mnist
+----------------------
+reconocimiento de imagenes (escritas a mano .. numeros)
